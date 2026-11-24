@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Residential electrification + solar/EV analysis — Zachariah Luna</title>
+  <meta name="description" content="Can an existing gas home switch to a heat pump, induction range, heat-pump water heater and EV charger without a panel upgrade, and how much solar and battery would it take to pay off?">
+  <meta property="og:title" content="Residential electrification + solar/EV analysis — Zachariah Luna">
+  <meta property="og:description" content="Can an existing gas home switch to a heat pump, induction range, heat-pump water heater and EV charger without a panel upgrade, and how much solar and battery would it take to pay off?">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="../index.html">Zachariah Luna</a>
+      <nav class="nav" aria-label="Main">
+      <a href="../index.html">Home</a>
+      <a href="../projects.html" aria-current="page">Projects</a>
+      <a href="../experience.html">Experience</a>
+      <a href="../audio.html">Audio</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <header class="project-head">
+      <h1>Residential electrification + solar/EV analysis</h1>
+      <p class="lede">Can an existing gas home switch to a heat pump, induction range, heat-pump water heater and EV charger without a panel upgrade, and how much solar and battery would it take to pay off?</p>
+      <p class="meta-line">Planned — Dec 2026 &middot; NEC 220.83, PVWatts, Excel/Python</p>
+    </header>
+
+    <article class="article">
+      <h2 id="problem">Problem</h2>
+      <p>Many California homes have 100 A or 125 A panels. Going all-electric often triggers a costly panel or service upgrade. I wanted to find out whether a typical home actually needs one, and what solar and storage would change.</p>
+      <p class="todo">Describe the house: size, climate zone, existing panel rating, current gas appliances, utility rate plan.</p>
+      <h2 id="design">Design</h2>
+      <p>Method:</p><ul><li>Existing-dwelling load calculation per NEC 220.83 for each electrification step.</li><li>Solar production estimate with NREL PVWatts.</li><li>EV charging and battery sizing based on daily driving and time-of-use rates.</li><li>Simple payback and cost comparison.</li></ul>
+      <p class="todo">Add the load-calc table and any assumptions.</p>
+      <h2 id="build">Build</h2>
+      <p>This is an analysis project, so the "build" is the model: the spreadsheet or script, inputs, and how each scenario was set up.</p>
+      <p class="todo">Link the spreadsheet or GitHub repo.</p>
+      <h2 id="results">Results</h2>
+      <figure><img src="../assets/img/chart-placeholder.svg" alt="Placeholder: calculated panel load vs. panel rating for each scenario." loading="lazy" width="800" height="500"><figcaption>Placeholder: calculated panel load vs. panel rating for each scenario.</figcaption></figure>
+      <table><thead><tr><th>Scenario</th><th>Calculated load</th><th>Fits panel?</th><th>Payback</th></tr></thead><tbody><tr><td>Baseline (gas)</td><td>— A</td><td>—</td><td>—</td></tr><tr><td>+ Heat pump + HPWH</td><td>— A</td><td>—</td><td>—</td></tr><tr><td>+ EV charger</td><td>— A</td><td>—</td><td>—</td></tr><tr><td>+ Solar + battery</td><td>— A</td><td>—</td><td>— yr</td></tr></tbody></table>
+      <h2 id="lessons-learned">Lessons learned</h2>
+      <p class="todo">Two or three honest takeaways: what surprised you, what you'd measure next time.</p>
+
+      <nav class="pager" aria-label="Project navigation"><a href="../projects.html">&larr; All projects</a><a href="dc-microgrid.html">DC microgrid &rarr;</a></nav>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span class="sig">Zachariah Luna</span>
+      <span><a href="mailto:your.email@example.com">Email</a> &middot; <a href="https://www.linkedin.com/in/zachariah-luna-01328830b/">LinkedIn</a> &middot; <a href="https://github.com/YOUR-GITHUB-USERNAME">GitHub</a> &middot; <a href="../assets/resume.pdf">Résumé</a> &middot; &copy; 2026</span>
+    </div>
+  </footer>
+</body>
+</html>

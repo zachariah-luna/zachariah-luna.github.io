@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Solar + battery DC microgrid with ESP32 load shedding — Zachariah Luna</title>
+  <meta name="description" content="A small 12 V solar and LiFePO4 system where an ESP32 monitors the battery and sheds lower-priority loads so a Meshtastic mesh node stays online through cloudy stretches.">
+  <meta property="og:title" content="Solar + battery DC microgrid with ESP32 load shedding — Zachariah Luna">
+  <meta property="og:description" content="A small 12 V solar and LiFePO4 system where an ESP32 monitors the battery and sheds lower-priority loads so a Meshtastic mesh node stays online through cloudy stretches.">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="../index.html">Zachariah Luna</a>
+      <nav class="nav" aria-label="Main">
+      <a href="../index.html">Home</a>
+      <a href="../projects.html" aria-current="page">Projects</a>
+      <a href="../experience.html">Experience</a>
+      <a href="../audio.html">Audio</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <header class="project-head">
+      <h1>Solar + battery DC microgrid with ESP32 load shedding</h1>
+      <p class="lede">A small 12 V solar and LiFePO4 system where an ESP32 monitors the battery and sheds lower-priority loads so a Meshtastic mesh node stays online through cloudy stretches.</p>
+      <p class="meta-line">Planned — Jan–Mar 2027 &middot; ESP32, LiFePO4, MPPT, Meshtastic</p>
+    </header>
+
+    <article class="article">
+      <h2 id="problem">Problem</h2>
+      <p>Off-grid nodes fail when the battery runs flat. A controller that drops non-critical loads early can keep the critical load running much longer. This project builds and measures that idea on a bench-scale microgrid.</p>
+      <p class="todo">State the target: e.g. keep the Meshtastic node running for N days with no sun.</p>
+      <h2 id="design">Design</h2>
+      <ul><li>Power budget for each load (critical vs. sheddable).</li><li>Panel, charge controller and battery sizing.</li><li>ESP32 measures voltage and current and switches loads with MOSFETs or relays at set thresholds.</li><li>Fusing, wire sizing and protection.</li></ul>
+      <figure><img src="../assets/img/diagram-placeholder.svg" alt="Placeholder: one-line / block diagram of the microgrid." loading="lazy" width="800" height="500"><figcaption>Placeholder: one-line / block diagram of the microgrid.</figcaption></figure>
+      <p class="todo">Add the power budget table and the load-shedding thresholds.</p>
+      <h2 id="build">Build</h2>
+      <p class="todo">Photos of the build, parts list with costs, firmware link on GitHub.</p>
+      <h2 id="results">Results</h2>
+      <figure><img src="../assets/img/chart-placeholder.svg" alt="Placeholder: battery state of charge and load status over a multi-day test." loading="lazy" width="800" height="500"><figcaption>Placeholder: battery state of charge and load status over a multi-day test.</figcaption></figure>
+      <p class="todo">Runtime with and without load shedding; Meshtastic range test results.</p>
+      <h2 id="lessons-learned">Lessons learned</h2>
+      <p class="todo">What worked, what failed, and what you'd change in the next version.</p>
+
+      <nav class="pager" aria-label="Project navigation"><a href="residential-electrification.html">&larr; Residential electrification</a><a href="event-power-box.html">Event power box &rarr;</a></nav>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span class="sig">Zachariah Luna</span>
+      <span><a href="mailto:your.email@example.com">Email</a> &middot; <a href="https://www.linkedin.com/in/zachariah-luna-01328830b/">LinkedIn</a> &middot; <a href="https://github.com/YOUR-GITHUB-USERNAME">GitHub</a> &middot; <a href="../assets/resume.pdf">Résumé</a> &middot; &copy; 2026</span>
+    </div>
+  </footer>
+</body>
+</html>
